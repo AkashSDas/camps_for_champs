@@ -1,0 +1,48 @@
+@media only screen and (max-width: 600px) {
+  .cart {
+    margin-top: 3rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    hr {
+      margin: 0.1rem auto;
+    }
+
+    .camp-cart {
+      width: 100%;
+
+      .cart-btn {
+        width: 90%;
+      }
+
+      .cart-items-list {
+        .container {
+          margin-top: 0.1rem;
+          width: 100%;
+
+          .product-cart {
+            width: 100%;
+
+            img {
+              width: 40%;
+            }
+
+            .info {
+              .description {
+                max-width: 8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cart .camp-cart .cart-items-list {
+    .payment-btn {
+      width: 100%;
+    }
+  }
+}

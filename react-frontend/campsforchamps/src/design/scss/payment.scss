@@ -1,0 +1,35 @@
+.payment {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .total-price {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+
+  .checkout-btn {
+    background: var(--blue);
+    border: none;
+    color: var(--h-color);
+    font-family: var(--font-head);
+    padding: 0.8rem 6rem;
+    border-radius: 4px;
+  }
+}
+
+.payment .braintree-payment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

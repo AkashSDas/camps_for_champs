@@ -1,0 +1,211 @@
+// =========================
+// CAMP PLAN
+// =========================
+
+.camp-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 8rem;
+
+  h1 {
+    margin: 2rem auto;
+    font-size: 2rem;
+  }
+
+  h3 {
+    margin: 2rem auto;
+    font-size: 1.6rem;
+  }
+
+  .plan-grid {
+    display: flex;
+    flex-direction: column;
+
+    // =========================
+    // CAMP PLAN CARD
+    // =========================
+
+    .plan-card {
+      margin: 1rem auto;
+      border-radius: 10px;
+      background-color: var(--nav-bg);
+      box-shadow: var(--nav-shadow);
+
+      img {
+        height: 15rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .info {
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h3 {
+          margin: 0;
+          font-size: 1rem;
+          text-overflow: ellipsis;
+          max-width: 30rem;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+        .description {
+          font-size: 0.8rem;
+          margin-top: 0.4rem;
+          text-overflow: ellipsis;
+          max-width: 30rem;
+          max-height: 1rem;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+        .ratings {
+          margin-top: 0;
+          font-size: 1rem;
+          color: var(--yellow-dark);
+        }
+
+        .price {
+          margin-top: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+// =========================
+// CAMP PLAN INFO
+// =========================
+.camp-plan-info {
+  margin: 1rem;
+
+  a {
+    color: var(--blue);
+    text-decoration: underline;
+    font-size: 0.8rem;
+  }
+
+  .img-container {
+    margin-top: 2rem;
+    padding: 0;
+    border-radius: 10px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border-radius: 10px;
+      height: 100%;
+      width: 60%;
+      box-shadow: var(--nav-shadow);
+    }
+  }
+
+  .message {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+
+    h3 {
+      margin: 0;
+      font-size: 1.4rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      margin-top: 0.8rem;
+    }
+
+    .sub-info {
+      font-size: 0.9rem;
+
+      .ratings {
+        margin-top: 0;
+        font-size: 1rem;
+        color: var(--yellow-dark);
+      }
+
+      .price {
+        margin: 0.8rem auto;
+      }
+    }
+  }
+
+  .info .heading {
+    width: 70%;
+    padding: 0rem 1rem;
+  }
+
+  .extra-info {
+    padding: 0rem 1rem;
+
+    em {
+      background: var(--pink);
+      padding: 0.1rem;
+      color: var(--h-color);
+    }
+
+    .dates {
+      font-size: 1rem;
+    }
+
+    .description {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.fa-calendar-star {
+  color: var(--blue);
+}
+
+.camp-plan-info .btn-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+
+  button {
+    width: 50%;
+    margin: 1rem;
+    background: var(--h-color);
+    border: 1.5px solid var(--h-color);
+    border-radius: 40px;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--background);
+    font-family: var(--font-head);
+  }
+}
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.camp-plan-info .btn-section button:hover {
+  color: yellowgreen;
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

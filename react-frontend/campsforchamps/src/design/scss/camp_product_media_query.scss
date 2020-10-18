@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+  .camp-product {
+    margin: 3rem 0.6rem auto 0.6rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .product-grid {
+      gap: 0.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+      .product-card {
+        img {
+          height: 8rem;
+        }
+
+        .info {
+          margin: 1rem 0.2rem;
+          flex-direction: column;
+
+          h3 {
+            max-width: 10rem;
+          }
+        }
+      }
+    }
+  }
+
+  .camp-product-info {
+    margin-top: 5rem;
+
+    .info-container {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 20rem;
+      }
+    }
+  }
+}

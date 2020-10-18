@@ -1,0 +1,29 @@
+.container {
+  margin: auto 1rem;
+
+  h1 {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+
+    .card {
+      height: 100%;
+      width: 100%;
+      box-shadow: var(--nav-shadow);
+      border-radius: 4px;
+      transition: all 500ms;
+      overflow: hidden;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

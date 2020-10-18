@@ -1,0 +1,141 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 1rem;
+
+  h1 {
+    margin: 2rem auto;
+    font-size: 2rem;
+  }
+
+  .camp-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .cart-btn {
+      background: transparent;
+      border: 1.5px solid var(--h-color);
+      border-radius: 4px;
+      padding: 0.8rem;
+      font-size: 0.8rem;
+      margin: 1rem auto;
+      width: 70%;
+      color: var(--h-color);
+      font-family: var(--font-head);
+      outline: none;
+    }
+
+    .total-price {
+      text-align: center;
+    }
+  }
+}
+
+.product-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: var(--nav-shadow);
+  border-radius: 10px;
+  padding: 0;
+  width: 70%;
+
+  margin: 2rem auto;
+
+  img {
+    height: 8rem;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--nav-bg);
+    box-shadow: var(--nav-shadow);
+    margin-right: 1rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    max-width: 20rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .price {
+      margin: 0.6rem auto;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .remove-btn {
+      background: transparent;
+      border: 1px solid var(--h-color);
+      border-radius: 8px;
+      padding: 0.4rem 1rem;
+      font-size: 1rem;
+      color: var(--h-color);
+      font-family: var(--font-head);
+      margin: 1rem;
+    }
+  }
+}
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.camp-product-info .info .btn-section button:hover {
+  color: yellowgreen;
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.cart .camp-cart .cart-items-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .payment-btn {
+    // background: transparent;
+    background: var(--h-color);
+    border: 1.5px solid var(--h-color);
+    border-radius: 40px;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+    width: 60%;
+    // color: var(--h-color);
+    color: var(--nav-bg);
+    font-family: var(--font-head);
+    outline: none;
+  }
+
+  .payment-btn:hover {
+    color: yellowgreen;
+    animation: color-rotate 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}

@@ -1,0 +1,176 @@
+// ======================
+// PROFILE
+// ======================
+
+.profile-container {
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  h1 {
+    margin: 3rem auto 3rem auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1rem;
+
+    span {
+      margin-left: 0.5rem;
+      font-family: var(--font-body);
+      color: var(--text-color);
+    }
+  }
+
+  .user-core-info {
+    background-color: var(--nav-bg);
+    width: 80%;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: var(--nav-shadow);
+
+    .personal-info {
+      margin: 2rem auto;
+
+      .info {
+        h4 {
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+
+  button {
+    border: 2px solid var(--h-color);
+    border-radius: 40px;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    width: 60%;
+    font-family: var(--font-head);
+    background: var(--h-color);
+    color: var(--background);
+  }
+
+  .btn-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-section > button {
+    margin: 0.8rem auto;
+  }
+}
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.profile button:hover {
+  color: yellowgreen;
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.fa-user-crown {
+  color: var(--pink);
+}
+.fa-envelope {
+  color: var(--blue);
+}
+.fa-spider {
+  color: var(--purple);
+}
+.fa-deer-rudolph {
+  color: var(--orange);
+}
+.fa-rabbit-fast {
+  color: var(--green);
+}
+.fa-alicorn {
+  color: var(--pink-dark);
+}
+.fa-whale {
+  color: var(--blue-dark);
+}
+
+// ======================
+// CHANGE PASSWORD
+// ======================
+
+.change-password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 3rem auto 3rem auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
+
+.top-link-btn {
+  color: var(--blue);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+// ===========================
+// PERSONAL INFO UPDATE FORM
+// ============================
+
+.personal-info-update {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 3rem auto 2rem auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
+
+// ======================
+// USER CORE INFO
+// ======================
+.update-core-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 3rem auto 2rem auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}

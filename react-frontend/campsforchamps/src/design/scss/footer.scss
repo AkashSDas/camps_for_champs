@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 0.8rem;
+    font-family: var(--font-body);
+  }
+
+  hr {
+    width: 30%;
+    margin: 0.8rem auto;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      font-size: 0.8rem;
+      color: var(--blue);
+      text-decoration: underline;
+    }
+  }
+
+  .follow {
+    width: 20%;
+
+    .social-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1.1rem;
+    }
+  }
+
+  .source-code {
+    font-size: 1.1rem;
+  }
+}

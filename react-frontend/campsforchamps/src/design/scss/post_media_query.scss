@@ -1,0 +1,59 @@
+@media only screen and (max-width: 600px) {
+  .post {
+    margin-top: 5rem;
+
+    h1 {
+      font-size: 1.4rem;
+      margin-bottom: 0rem;
+    }
+
+    .create-post-btn {
+      padding: 0.4rem 3rem;
+    }
+
+    .container {
+      margin-top: 2rem;
+      width: 100%;
+
+      .post-container .all-posts {
+        width: 100%;
+      }
+    }
+  }
+
+  .post-create {
+    margin-top: 3rem;
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0rem;
+    }
+  }
+
+  .post-info {
+    margin: auto 0.2rem;
+
+    .post-container {
+      margin-top: 3rem;
+
+      .likes-btn {
+        justify-content: space-between;
+        width: 40%;
+      }
+
+      .author-btn-section {
+        width: 90%;
+        flex-direction: column;
+
+        .update-btn,
+        .delete-btn {
+          margin-bottom: 0.8rem;
+        }
+      }
+
+      hr {
+        margin: 1rem auto;
+      }
+    }
+  }
+}

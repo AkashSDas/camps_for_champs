@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px) {
+  .camp-plan {
+    margin: 3rem 1rem auto 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .plan-grid .plan-card {
+      .info {
+        h3 {
+          max-width: 10rem;
+        }
+      }
+    }
+  }
+
+  .camp-plan-info {
+    margin-top: 5rem;
+
+    .img-container {
+      img {
+        width: 100%;
+      }
+    }
+
+    .info {
+      flex-direction: column;
+      margin: 1rem;
+
+      .heading {
+        padding: 0rem;
+      }
+
+      .sub-info {
+        margin-top: 0.6rem;
+      }
+    }
+
+    .btn-section {
+      flex-direction: column;
+      margin: 1rem;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

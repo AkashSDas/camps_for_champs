@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@800&display=swap");
+
+// colors
+$colors: (
+  red: hsl(348, 100%, 61%),
+  orange: #fa8142,
+  green: #09c372,
+  purple: hsl(265, 50%, 60%),
+  yellow: hsl(48, 100%, 67%),
+  blue: #498afb,
+  pink: #ff4088,
+);
+
+// default theme(dark theme)
+@mixin default-theme {
+  --background: var(--gray7);
+  --text-color: var(--gray4);
+  --h-color: var(--gray1);
+  --banner-color: var(--gray6);
+  --nav-bg: var(--gray5);
+  --nav-item-bg: var(--gray5);
+  --nav-item-color: var(--gray3);
+  --nav-item-hover-color: var(--pink);
+  --nav-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  --nav-item-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  --card-bg: var(--gray5);
+  --form-bg: var(--gray5);
+  --form-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  --loader-border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  --loader-border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  --loader-border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  --loader-border-left: 1.1em solid #ffffff;
+  --h-border: 2px dashed var(--gray6);
+  transition: all 0.3s ease;
+}
+
+.dark-theme {
+  @include default-theme;
+}
+
+.light-theme {
+  --background: var(--gray1);
+  --text-color: var(--gray7);
+  --h-color: var(--gray7);
+  --banner-color: var(--gray2);
+  --nav-bg: var(--gray1);
+  --nav-item-bg: var(--gray1);
+  --nav-item-color: var(--gray7);
+  --nav-item-hover-color: var(--pink);
+  --nav-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  --nav-item-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  --card-bg: var(--gray0);
+  --form-bg: var(--gray0);
+  --loader-border-top: 1.1em solid rgba(0, 0, 0, 0.2);
+  --loader-border-right: 1.1em solid rgba(0, 0, 0, 0.2);
+  --loader-border-bottom: 1.1em solid rgba(0, 0, 0, 0.2);
+  --loader-border-left: 1.1em solid #000000;
+  --h-border: 2px dashed var(--gray3);
+  transition: all 0.5s ease;
+}
+
+:root {
+  // colors
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+    --#{$name}-dark: #{darken($color, 7%)};
+    --#{$name}-light: #{lighten($color, 7%)};
+  }
+
+  --gray0: white;
+  --gray1: #f8f8f8;
+  --gray2: #efefef;
+  --gray3: #dbe1e8;
+  --gray4: #b2becd;
+  --gray5: #2a2e35;
+  --gray6: #1e2126;
+  --gray7: #12181b;
+  --gray8: black;
+
+  // fonts
+  --font-size: 20px;
+  --font-body: "Lato", sans-serif;
+  --font-head: "Montserrat", sans-serif;
+
+  --nav-height: 60px;
+
+  @include default-theme;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--h-color);
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  background-color: var(--gray5);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 250px;
+  margin-top: 120px;
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 90%;
+  border-bottom: var(--h-border);
+  height: 1px;
+  margin: 2rem auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0.5em 0;
+}
+
+// Color utilities
+@each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+  .#{$name}-bg {
+    background: $color;
+  }
+}
+
+// Random stuff
+
+::selection {
+  background: var(--green);
+  color: var(--gray0);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size: 15px;
+    --nav-width: 3em;
+  }
+}

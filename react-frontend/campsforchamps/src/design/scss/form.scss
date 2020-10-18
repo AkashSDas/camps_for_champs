@@ -1,0 +1,85 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 3rem auto 1rem auto;
+    font-size: 2rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+
+  label {
+    margin: 2rem auto 0.4rem 0.2rem;
+    font-size: 0.8rem;
+    font-family: var(--font-head);
+    color: var(--h-color);
+  }
+
+  input,
+  textarea {
+    background-color: var(--form-bg);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    color: var(--h-color);
+    outline: none;
+    box-shadow: var(--form-shadow);
+  }
+
+  a {
+    color: var(--blue);
+    text-decoration: underline;
+    font-size: 0.8rem;
+  }
+
+  a:first-of-type {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  a:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  button {
+    border: 2px solid var(--h-color);
+    border-radius: 40px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    background: var(--h-color);
+    color: var(--background);
+    font-family: var(--font-head);
+  }
+}
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.form button:hover {
+  color: yellowgreen;
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+select {
+  background-color: var(--form-bg);
+  font-family: var(--font-body);
+  border: none;
+  padding: 0.4rem;
+  border-radius: 10px;
+  outline: none;
+  color: var(--text-color);
+}

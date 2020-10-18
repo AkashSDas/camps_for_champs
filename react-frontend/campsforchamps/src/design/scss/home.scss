@@ -1,0 +1,320 @@
+// ABOUT US
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+  .content {
+    margin-top: 1rem;
+
+    a {
+      color: var(--blue);
+      text-decoration: underline;
+      display: contents;
+    }
+
+    em {
+      color: var(--red);
+      display: contents;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 1rem;
+    }
+
+    img {
+      margin: 1rem;
+      width: 50%;
+      border-radius: 4px;
+      box-shadow: var(--nav-shadow);
+    }
+
+    .normal-order {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .reverse-order {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+// CONTACT US
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+  button {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    background: var(--h-color);
+    color: var(--background);
+  }
+}
+
+// HOME
+.home {
+  margin: 1rem;
+
+  h1 {
+    margin: 2rem auto;
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  hr {
+    margin: 1rem auto;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .vision {
+      margin: 1rem 2rem;
+    }
+
+    img {
+      border-radius: 20px;
+      box-shadow: var(--nav-shadow);
+      margin: 1rem 2rem;
+      width: 40%;
+      height: 20rem;
+      object-fit: fill;
+    }
+  }
+
+  .home-camp-plan {
+    margin: 1.4rem 1rem;
+    font-size: 0.8rem;
+
+    h1 {
+      margin: 2rem auto;
+      font-size: 0.95rem;
+    }
+
+    h3 {
+      margin: 2rem auto;
+      font-size: 0.8rem;
+    }
+
+    .plan-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-auto-rows: 340px;
+
+      .plan-card {
+        margin: 1rem auto;
+        border-radius: 10px;
+        background-color: var(--nav-bg);
+        box-shadow: var(--nav-shadow);
+
+        img {
+          height: 15rem;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        .info {
+          margin: 1rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          overflow: hidden;
+
+          h3 {
+            margin: 0;
+            font-size: 1rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 15rem;
+            overflow: hidden;
+          }
+
+          .description {
+            font-size: 0.8rem;
+            margin-top: 0.4rem;
+            text-overflow: ellipsis;
+            max-width: 10rem;
+            max-height: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+          .ratings {
+            margin-top: 0;
+            font-size: 1rem;
+            color: var(--yellow-dark);
+          }
+
+          .price {
+            margin-top: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .home-camp-product {
+    margin: 1.4rem 1rem;
+    font-size: 0.8rem;
+
+    h1 {
+      margin: 2rem auto;
+      font-size: 0.95rem;
+    }
+
+    h3 {
+      margin: 2rem auto;
+      font-size: 0.8rem;
+      text-align: start;
+    }
+
+    .product-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+      .product-card {
+        border-radius: 10px;
+        background-color: var(--nav-bg);
+        box-shadow: var(--nav-shadow);
+
+        img {
+          height: 15rem;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        .info {
+          margin: 1rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          font-size: 0.8rem;
+
+          h3 {
+            font-size: 0.8rem;
+            margin: 0;
+            max-width: 10rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+          .description {
+            font-size: 0.8rem;
+            margin-top: 0.4rem;
+            text-overflow: ellipsis;
+            max-width: 10rem;
+            max-height: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+          .ratings {
+            margin-top: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--yellow-dark);
+          }
+
+          .price {
+            margin-top: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .home-product-container,
+  .home-plan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .more-product-btn,
+  .more-plan-btn {
+    background: var(--h-color);
+    color: var(--background);
+    padding: 0.8rem 6rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-family: var(--font-head);
+  }
+
+  .customer-review {
+    .reviews {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .review-card {
+        width: 15rem;
+        text-align: center;
+        height: 15rem;
+        font-size: 0.8rem;
+        word-wrap: break-word;
+        padding: 0.8rem;
+        background: var(--nav-bg);
+        box-shadow: var(--nav-shadow);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 4px;
+
+        img {
+          height: 10rem;
+          width: 10rem;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .move-arrows {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        margin: 3rem 2rem auto 2rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.fa-map-marked-alt {
+  color: var(--green);
+}
+
+.fa-flashlight {
+  color: var(--orange);
+}
+
+.fa-rocket {
+  color: var(--green);
+}

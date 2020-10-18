@@ -1,0 +1,46 @@
+@media only screen and (max-width: 600px) {
+  .profile {
+    margin-top: 3rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .user-core-info {
+      width: 84%;
+    }
+
+    button {
+      width: 95%;
+    }
+  }
+
+  .profile-container {
+    .change-password {
+      margin-top: 3rem;
+
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+      }
+    }
+
+    .personal-info-update {
+      margin-top: 3rem;
+
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+      }
+    }
+
+    .user-core-info {
+      margin-top: 3rem;
+
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+      }
+    }
+  }
+}
