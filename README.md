@@ -33,7 +33,6 @@ The project was to create a responsive and beautiful eCommerce web app with paym
 ![29_dark_version.png](./docs/images/29_dark_version.png)
 ![22_dark_version.png](./docs/images/22_dark_version.png)
 ![18_dark_version.png](./docs/images/18_dark_version.png)
-![.DS_Store](./docs/images/.DS_Store)
 ![13_dark_version.png](./docs/images/13_dark_version.png)
 ![11_light_version.png](./docs/images/11_light_version.png)
 ![16_dark_version.png](./docs/images/16_dark_version.png)
