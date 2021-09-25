@@ -1,4 +1,4 @@
-# camps_for_champs
+# camps-for-champs
 
 ## Project goal
 
